@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activityOne"
+    android:background="#FDFDFD"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/style">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/logo"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/title"
+                    android:text="Perosnal Details" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="720dp"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        style="@style/rowLinear"
+                        android:layout_width="411dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/NameTxt"
+                            style="@style/textStylee"
+                            android:hint="Name" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout style="@style/rowLinear">
+
+                        <EditText
+                            android:id="@+id/EmailTxt"
+                            style="@style/textStylee"
+                            android:hint=" Email Adrdess"
+                            android:inputType="textEmailAddress" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout style="@style/rowLinear">
+
+                        <EditText
+                            android:id="@+id/PhoneTxt"
+
+                            style="@style/textStylee"
+                            android:hint="Phone Number"
+                            android:inputType="phone" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout style="@style/rowLinear">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="142dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                style="@style/textStyle"
+                                android:layout_width="117dp"
+                                android:layout_height="51dp"
+                                android:text="Gender"
+                                android:textSize="18sp"
+                                tools:text="Gender" />
+
+                            <Spinner
+                                android:id="@+id/GenderSpn"
+                                style="@style/textStyle"
+                                android:layout_width="226dp"
+                                android:layout_height="48dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout style="@style/rowLinear">
+
+                        <EditText
+                            android:id="@+id/HobbiesTxt"
+                            style="@style/textStylee"
+                            android:hint="Hobbies"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+
+                        style="@style/rowLinear">
+
+                        <ScrollView
+                            android:layout_width="337dp"
+                            android:layout_height="123dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/AboutTxt"
+                                    style="@style/textStylee"
+                                    android:hint="Description About Yourself"
+                                    android:inputType="textPersonName" />
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/nextBtn"
+                        style="@style/btn"
+                        android:layout_height="61dp"
+                        android:background="#070000"
+                        android:backgroundTint="@color/black"
+                        android:onClick="nextPageOnClick"
+                        android:text="NEXT"
+                        android:textColor="#FDFDFD" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

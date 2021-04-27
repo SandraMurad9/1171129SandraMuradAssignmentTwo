@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/style"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/logo"
+                    app:srcCompat="@drawable/_83_3831724_file_document_cv_curriculum_vitae_svg_png_icon" />
+
+                <TextView
+                    android:id="@+id/textView7"
+
+                    style="@style/title"
+                    android:text="You Cv Infomation" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="396dp"
+                android:layout_height="552dp">
+
+                <TableRow
+                    android:layout_width="408dp"
+                    android:layout_height="209dp">
+
+                    <ScrollView
+                        android:layout_width="365dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout style="@style/lastLinear">
+
+                            <TextView
+                                android:id="@+id/personalView"
+                                style="@style/textSt" />
+                        </LinearLayout>
+                    </ScrollView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            style="@style/lastLinear">
+
+                            <TextView
+                                android:id="@+id/experienceView"
+                                style="@style/textSt" />
+                        </LinearLayout>
+                    </ScrollView>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

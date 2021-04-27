@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activityOne"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                style="@style/style">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    style="@style/logo"
+                    app:srcCompat="@drawable/_27_1277341_png_file_svg_education_icon_png" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/title"
+                    android:text="Experiences" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="617dp"
+                android:foregroundGravity="center|center_horizontal"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="386dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/textStyle"
+                            android:layout_width="163dp"
+                            android:layout_height="53dp"
+                            android:layout_marginRight="20dp"
+                            android:text="Education"
+                            android:textSize="18sp"
+                            tools:text="Education" />
+
+                        <Spinner
+                            android:id="@+id/EduSpn"
+                            style="@style/textStyle"
+                            android:layout_width="217dp"
+                            android:layout_height="58dp" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/UniversityTxt"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:hint="University" />
+
+                        <EditText
+                            android:id="@+id/BacholarTxt"
+                            style="@style/textStyle"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Bacholar"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="114dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="105dp"
+                            android:layout_height="59dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="Skills"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/skillsTxt"
+                                android:layout_width="181dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Skills"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/WorkTxt"
+
+                                android:layout_width="416dp"
+                                android:layout_height="85dp"
+                                android:gravity="center"
+                                android:hint="WorK Experiences"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="352dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="162dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="do you speak Forgin Languages"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:id="@+id/LanguagesRd"
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp"
+                                android:layout_weight="1">
+
+                                <RadioButton
+                                    android:id="@+id/yesBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Yes"
+                                    android:textColor="#000000" />
+
+                                <RadioButton
+                                    android:id="@+id/noBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="No" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp">
+
+                    <LinearLayout
+                        android:layout_width="420dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="51dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="If yes, which"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="268dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/LanguageTxt"
+                                android:layout_width="235dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="100dp"
+                            android:gravity="center"
+                            android:text="Remember me"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:id="@+id/next2Btn"
+
+                            style="@style/btn"
+                            android:layout_width="134dp"
+                            android:background="#000000"
+                            android:backgroundTint="#040000"
+                            android:onClick="nextPageOnClick"
+                            android:text="NEXT"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
